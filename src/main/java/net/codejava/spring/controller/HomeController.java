@@ -26,6 +26,7 @@ public class HomeController {
 
 	@Autowired
 	private ContactDAO contactDAO;
+
 	
 	@RequestMapping(value="/")
 	public ModelAndView listContact(ModelAndView model) throws IOException{
