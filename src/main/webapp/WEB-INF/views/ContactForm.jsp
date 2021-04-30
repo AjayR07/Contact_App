@@ -5,36 +5,41 @@
 	"http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>New/Edit Contact</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>New/Edit Contact</title>
+	<jsp:include page="includes.jsp" />
 </head>
 <body>
-	<div align="center">
+	<div align="center" style="margin-top: 10px; padding: 20px">
 		<h1>New/Edit Contact</h1>
-		<form:form action="saveContact" method="post" modelAttribute="contact">
-		<table>
+		<div class="ui divider"></div>
+		<form:form action="saveContact" method="post" modelAttribute="contact" class="ui form">
+		<table style="width: 60%" align="center">
 			<form:hidden path="id"/>
 			<tr>
 				<td>Name:</td>
-				<td><form:input path="name" /></td>
+				<td class="ui fluid input"><form:input path="name"/></td>
 			</tr>
 			<tr>
 				<td>Email:</td>
-				<td><form:input path="email" /></td>
+				<td class="ui fluid input"><form:input path="email" /></td>
 			</tr>
-			<tr>
+			<tr >
 				<td>Address:</td>
-				<td><form:input path="address" /></td>
+				<td class="ui fluid input"><form:textarea path="address" rows="3"/></td>
 			</tr>
-			<tr>
-				<td>Telephone:</td>
-				<td><form:input path="telephone" /></td>
+			<tr >
+				<td>Phone:</td>
+				<td class="ui fluid input"><form:input path="telephone" /></td>
 			</tr>
-			<tr>
-				<td colspan="2" align="center"><input type="submit" value="Save"></td>
+			<tr style="padding-left: 5%;padding-right: 5%;">
+				<td colspan="2" align="center"><button type="submit" value="Save" class="large fluid ui green button" ><i class="save outline icon"></i>Save</button></td>
 			</tr>
 		</table>
 		</form:form>
 	</div>
+	<style type="text/css">
+		th, td { padding: 15px; }
+	</style>
 </body>
 </html>
