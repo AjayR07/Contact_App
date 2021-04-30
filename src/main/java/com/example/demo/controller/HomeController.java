@@ -1,12 +1,12 @@
-package net.codejava.spring.controller;
+package com.example.demo.controller;
 
 import java.io.IOException;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
-import net.codejava.spring.dao.ContactDAO;
-import net.codejava.spring.model.Contact;
+import com.example.demo.dao.ContactDAO;
+import com.example.demo.model.Contact;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -15,12 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-/**
- * This controller routes accesses to the application to the appropriate
- * hanlder methods. 
- * @author www.codejava.net
- *
- */
 @Controller
 public class HomeController {
 

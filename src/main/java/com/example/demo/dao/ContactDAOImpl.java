@@ -1,4 +1,4 @@
-package net.codejava.spring.dao;
+package com.example.demo.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -6,18 +6,14 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
-import net.codejava.spring.model.Contact;
+import com.example.demo.model.Contact;
 
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.ResultSetExtractor;
 import org.springframework.jdbc.core.RowMapper;
 
-/**
- * An implementation of the ContactDAO interface.
- * @author www.codejava.net
- *
- */
+
 public class ContactDAOImpl implements ContactDAO {
 
 	private JdbcTemplate jdbcTemplate;

@@ -1,17 +1,17 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="SpringMvcJdbcTemplate:war exploded">
-    <output-path>$PROJECT_DIR$/target/SpringMvcJdbcTemplate</output-path>
+  <artifact type="exploded-war" name="ContactApp:war exploded">
+    <output-path>$PROJECT_DIR$/target/ContactApp</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
-        <module>SpringMvcJdbcTemplate</module>
+        <module>ContactApp</module>
         <packaging>war</packaging>
       </options>
     </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="SpringMvcJdbcTemplate" />
+          <element id="module-output" name="ContactApp" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.0.3.RELEASE" />
@@ -33,9 +33,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/SpringMvcJdbcTemplate/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/ContactApp/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="SpringMvcJdbcTemplate/web/Web" />
+      <element id="javaee-facet-resources" facet="ContactApp/web/Web" />
     </root>
   </artifact>
 </component>

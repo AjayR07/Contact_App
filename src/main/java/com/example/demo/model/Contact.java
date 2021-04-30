@@ -1,4 +1,4 @@
-package net.codejava.spring.model;
+package com.example.demo.model;
 
 public class Contact {
 	private int id;

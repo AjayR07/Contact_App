@@ -1,9 +1,9 @@
-package net.codejava.spring.config;
+package com.example.demo.config;
 
 import javax.sql.DataSource;
 
-import net.codejava.spring.dao.ContactDAO;
-import net.codejava.spring.dao.ContactDAOImpl;
+import com.example.demo.dao.ContactDAO;
+import com.example.demo.dao.ContactDAOImpl;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -16,7 +16,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
-@ComponentScan(basePackages="net.codejava.spring")
+@ComponentScan(basePackages="com.example.demo")
 @EnableWebMvc
 public class MvcConfiguration extends WebMvcConfigurerAdapter{
 

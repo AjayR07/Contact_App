@@ -1,14 +1,10 @@
-package net.codejava.spring.dao;
+package com.example.demo.dao;
 
 import java.util.List;
 
-import net.codejava.spring.model.Contact;
+import com.example.demo.model.Contact;
 
-/**
- * Defines DAO operations for the contact model.
- * @author www.codejava.net
- *
- */
+
 public interface ContactDAO {
 	
 	public void saveOrUpdate(Contact contact);
