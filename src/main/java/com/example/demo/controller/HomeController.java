@@ -20,14 +20,12 @@ public class HomeController {
 
 	@Autowired
 	private ContactDAO contactDAO;
-
 	
 	@RequestMapping(value="/")
 	public ModelAndView listContact(ModelAndView model) throws IOException{
 		List<Contact> listContact = contactDAO.list();
 		model.addObject("listContact", listContact);
 		model.setViewName("home");
-		
 		return model;
 	}
 	

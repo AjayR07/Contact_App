@@ -32,12 +32,17 @@
 						<div class="ui buttons">
 							<a href="editContact?id=${contact.id}"><button class="ui teal button"><i class="edit outline icon"></i>Edit</button></a>
 							<div class="or"></div>
-							<button class="ui orange button" id="deletebutton"><i class="trash alternate outline icon"></i>Delete</button>
-								<div class="large ui popup">
-									<div class="header" style="margin-bottom: 3px">Are you Sure?</div>
-									<div class="ui divider" style="margin-bottom: 5px"></div>
-									<a href="deleteContact?id=${contact.id}"><div class="compact ui negative button">Yes</div></a>
-								</div>
+							<button class="ui orange button" id="delete${contact.id}"><i class="trash alternate outline icon"></i>Delete</button>
+							<div class="large ui popup"  id="popup${contact.id}">
+								<div class="header" style="margin-bottom: 3px">Are you Sure?</div>
+								<div class="ui divider" style="margin-bottom: 5px"></div>
+								<a href="deleteContact?id=${contact.id}"><button class="compact ui negative button">Yes</button></a>
+							</div>
+							<script type="text/javascript">
+								$(document).ready(function() {
+									$('#delete${contact.id}').popup({popup: '#popup${contact.id}', hoverable:true});
+								});
+							</script>
 						</div>
 
 					</td>
@@ -59,10 +64,10 @@
 			</table>
 			</div>
     	</div>
-    <script type="text/javascript">
-		$(document).ready(function() {
-			$('#deletebutton').popup({popup: '.popup',hoverable:true});
-		});
-	</script>
+<%--    <script type="text/javascript">--%>
+<%--		$(document).ready(function() {--%>
+<%--			$('.ui.orange.button.delete').popup({popup: '.popup',hoverable:true});--%>
+<%--		});--%>
+<%--	</script>--%>
 	</body>
 </html>
